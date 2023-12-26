@@ -14,6 +14,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useEffect } from 'react';
+import Card1 from './components/Card1';
 
 function App() {
 
@@ -113,9 +114,66 @@ function App() {
           </div>
 
         </div>
+      </section>
 
+
+
+      {/* section4 */}
+      <section className='mt-[40px]'>
+
+        {/* main */}
+        <div >
+          {/* row1 */}
+          <div data-aos="fade-up" className='md:flex justify-around items-center m-[10px]'>
+            {/* left */}
+            <div className='mob:flex justify-center'>
+              <img src='src/assets/IMAGE (18).png' />
+            </div>
+            {/* right */}
+            <div>
+              <h1 className='text-[20px] font-bold mb-[20px]'>Gold & Black Pottery</h1>
+              <p className='text-[#6C6C6C]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed <br /> do eiusmod tempor incididunt ut labore dolore aua. Ut enim <br /> ad minim veniam, quis nostrud exercitationulco laboris nisi <br /> ut aliquip ex ea commodo consequatuisaute.</p>
+              <p className='font-bold mt-[10px]'>View Details</p>
+            </div>
+          </div>
+
+          {/* row2 */}
+          <div data-aos="fade-left" className='md:flex justify-around items-center m-[10px]'>
+
+            {/* right */}
+            <div>
+              <h1 className='text-[20px] font-bold mb-[20px]'>Gold & Black Pottery</h1>
+              <p className='text-[#6C6C6C]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed <br /> do eiusmod tempor incididunt ut labore dolore aua. Ut enim <br /> ad minim veniam, quis nostrud exercitationulco laboris nisi <br /> ut aliquip ex ea commodo consequatuisaute.</p>
+              <p className='font-bold mt-[10px]'>View Details</p>
+            </div>
+            {/* left */}
+            <div>
+              <img src='src/assets/IMAGE (19).png' />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* section5 */}
+      <section>
+
+
+        {/* title */}
+
+        <div className='flex flex-col  items-center justify-center'>
+          <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
+          <h1 className='md:text-[30px] font-bold  animate__animated animate__fadeInTopRight'>Pottery Collection</h1>
+        </div>
+
+
+        {/* cards */}
+        <div>
+          <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+        </div>
 
       </section>
+
 
     </>
   )
