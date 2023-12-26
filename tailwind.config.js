@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
@@ -26,8 +27,8 @@ export default {
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
       }
-
-    },
+    
+},
   },
   plugins: [],
 }

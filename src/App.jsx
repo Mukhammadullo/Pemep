@@ -1,14 +1,12 @@
-import './App.css'
+import Switcher from './components/Switcher'
 
+import './App.css'
 
 // animate css
 import 'animate.css';
-
-
 // aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 // mui icon
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Button from '@mui/material/Button';
@@ -18,16 +16,9 @@ import Card1 from './components/Card1';
 import EmailIcon from '@mui/icons-material/Email';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-
-import { pink } from '@mui/material/colors';
 import Checkbox from '@mui/material/Checkbox';
-
 // mui
 import TextField from '@mui/material/TextField';
-
-
-
-
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 function App() {
 
@@ -39,9 +30,9 @@ function App() {
   return (
     <>
 
-
+      <div className='dark:bg-slate-800 dark:text-[#96aebf]'>
       {/* header */}
-      <header className='flex justify-between shadow-xl p-[2%]'>
+      <header className='flex justify-between shadow-xl p-[2%] bg-white dark:bg-slate-800 dark:text-[#96aebf]'>
         {/* left */}
         <div>
           <img src='src/assets/1.jpg' />
@@ -55,26 +46,29 @@ function App() {
             <li className='mr-[40px]'>SHOP</li>
             <li className='mr-[40px]'>CONTACT</li>
           </ul>
+
+
           <Button variant="text" sx={{ width: "50px", borderLeft: "2px solid" }}> <ShoppingCartIcon className='ml-[20px]'></ShoppingCartIcon>  Cart</Button>
 
           <div className='md:hidden ml-[20px]'>
             <MenuIcon></MenuIcon>
           </div>
         </div>
+        <Switcher />
       </header>
 
 
 
       {/* section1 */}
-      <section className='section1 w-[100%] h-[80vh] md:flex justify-around items-center '>
+      <section className='section1 w-[100%] h-[80vh] md:flex justify-around items-center  dark:bg-slate-800 dark:text-[#96aebf]'>
 
         <div className='md:flex justify-around items-center'>
 
           {/* left */}
           <div className='mob:flex  flex-col items-center justify-center mob:mb-[20px] md:items-start'>
-            <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
+            <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft dark:text-[#96aebf]' >Pompeo Pottery</p>
             <div className='flex items-center'>
-              <h1 className='md:text-[50px] mob:text-[30px]  font-bold animate__animated animate__slideInLeft'>Unique Porcelain</h1>
+              <h1 className='md:text-[50px] mob:text-[30px]  font-bold animate__animated animate__slideInLeft '>Unique Porcelain</h1>
               <img src='src/assets/&.png' />
             </div>
             <h1 className='md:text-[50px] mob:text-[30px] font-bold  animate__animated animate__rotateInUpRight'>Stone Collection</h1>
@@ -92,7 +86,7 @@ function App() {
 
 
       {/* section2 */}
-      <section className='mt-[40px]'>
+      <section className='mt-[40px] dark:bg-slate-800'>
 
         {/* title */}
         <div className='flex flex-col items-center justify-center '>
@@ -132,7 +126,7 @@ function App() {
 
 
       {/* section4 */}
-      <section className='mt-[40px]'>
+      <section className='mt-[40px] dark:bg-slate-800'>
 
         {/* main */}
         <div >
@@ -169,7 +163,7 @@ function App() {
 
 
       {/* section5 */}
-      <section>
+      <section className='dark:bg-slate-800'>
 
 
         {/* title */}
@@ -193,7 +187,7 @@ function App() {
           <div data-aos="fade-down" className='md:flex justify-around mt-[20px]'>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
-            <Card1  img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
           </div>
 
 
@@ -205,7 +199,7 @@ function App() {
 
 
       {/* section6 */}
-      <section data-aos="flip-right" className='section6 w-[100%] h-[40vh] mt-[80px] flex items-center'>
+      <section data-aos="flip-right" className='section6 w-[100%] h-[40vh] mt-[80px] flex items-center dark:bg-slate-800'>
         <div className='ml-[30px]'>
           <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
           <h1 className='md:text-[30px] font-bold  animate__animated animate__fadeInTopRight'>Pottery Collection</h1>
@@ -216,7 +210,7 @@ function App() {
 
 
       {/* section7 */}
-      <section data-aos="zoom-in-right">
+      <section data-aos="zoom-in-right" className='dark:bg-slate-800'>
 
         <div >
           <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center m-[4%]'>
@@ -249,7 +243,7 @@ function App() {
 
       {/* section8 */}
       <hr />
-      <section data-aos="zoom-out-left" className='bg-[#DBDBDB1A] p-[4%]'>
+      <section data-aos="zoom-out-left" className='bg-[#DBDBDB1A] p-[4%] dark:bg-slate-800'>
 
         <div className='flex justify-center '>
           <div>
@@ -286,7 +280,7 @@ function App() {
 
       {/* footer */}
       <hr />
-      <footer  className='p-[1%]'>
+      <footer className='p-[1%] dark:bg-slate-800'>
 
         <div className='flex justify-center'>
           <h1>Template design by</h1>
@@ -295,7 +289,7 @@ function App() {
           <p>Webflow  </p>
         </div>
       </footer>
-
+      </div>
     </>
   )
 }
