@@ -55,7 +55,7 @@ function App() {
             <li className='mr-[40px]'>SHOP</li>
             <li className='mr-[40px]'>CONTACT</li>
           </ul>
-          <Button variant="text" sx={{ width: "50px", borderLeft: "2px solid" }}><ShoppingCartIcon></ShoppingCartIcon>  Cart</Button>
+          <Button variant="text" sx={{ width: "50px", borderLeft: "2px solid" }}> <ShoppingCartIcon className='ml-[20px]'></ShoppingCartIcon>  Cart</Button>
 
           <div className='md:hidden ml-[20px]'>
             <MenuIcon></MenuIcon>
@@ -160,7 +160,7 @@ function App() {
               <p className='font-bold mt-[10px]'>View Details</p>
             </div>
             {/* left */}
-            <div>
+            <div className='mob:flex justify-center'>
               <img src='src/assets/IMAGE (19).png' />
             </div>
           </div>
@@ -184,16 +184,16 @@ function App() {
         <div>
 
           {/* row1 */}
-          <div className='md:flex justify-around'>
+          <div data-aos="fade-up" className='md:flex justify-around'>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
             <Card1 img={"src/assets/Frame (5).png"} title={"Mint Pottery"} price={"$ 65.00 USD"}></Card1>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
           </div>
           {/* row2 */}
-          <div className='md:flex justify-around mt-[20px]'>
+          <div data-aos="fade-down" className='md:flex justify-around mt-[20px]'>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
             <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
-            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+            <Card1  img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
           </div>
 
 
@@ -205,7 +205,7 @@ function App() {
 
 
       {/* section6 */}
-      <section className='section6 w-[100%] h-[40vh] mt-[80px] flex items-center'>
+      <section data-aos="flip-right" className='section6 w-[100%] h-[40vh] mt-[80px] flex items-center'>
         <div className='ml-[30px]'>
           <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
           <h1 className='md:text-[30px] font-bold  animate__animated animate__fadeInTopRight'>Pottery Collection</h1>
@@ -216,10 +216,10 @@ function App() {
 
 
       {/* section7 */}
-      <section>
+      <section data-aos="zoom-in-right">
 
         <div >
-          <div className='flex flex-col justify-center items-center m-[4%]'>
+          <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center m-[4%]'>
             <img src='src/assets/IMAGE.svg' />
             <p className='m-[20px] text-[red]'>Latest news</p>
           </div>
@@ -249,7 +249,7 @@ function App() {
 
       {/* section8 */}
       <hr />
-      <section className='bg-[#DBDBDB1A] p-[4%]'>
+      <section data-aos="zoom-out-left" className='bg-[#DBDBDB1A] p-[4%]'>
 
         <div className='flex justify-center '>
           <div>
@@ -285,8 +285,16 @@ function App() {
       </section>
 
       {/* footer */}
+      <hr />
+      <footer  className='p-[1%]'>
 
-      <footer></footer>
+        <div className='flex justify-center'>
+          <h1>Template design by</h1>
+          <p className='text-[#6C6C6C]'>Dorian Hoxha-Image License Info</p>
+          <p className='text-[#6C6C6C]'>Powered by</p>
+          <p>Webflow  </p>
+        </div>
+      </footer>
 
     </>
   )
