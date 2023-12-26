@@ -15,7 +15,20 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useEffect } from 'react';
 import Card1 from './components/Card1';
+import EmailIcon from '@mui/icons-material/Email';
+import AddLocationIcon from '@mui/icons-material/AddLocation';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
+import { pink } from '@mui/material/colors';
+import Checkbox from '@mui/material/Checkbox';
+
+// mui
+import TextField from '@mui/material/TextField';
+
+
+
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 function App() {
 
   // aos
@@ -169,11 +182,111 @@ function App() {
 
         {/* cards */}
         <div>
-          <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
-        </div>
 
+          {/* row1 */}
+          <div className='md:flex justify-around'>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Mint Pottery"} price={"$ 65.00 USD"}></Card1>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+          </div>
+          {/* row2 */}
+          <div className='md:flex justify-around mt-[20px]'>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+            <Card1 img={"src/assets/Frame (5).png"} title={"Decor Plate"} price={"$ 65.00 USD"}></Card1>
+          </div>
+
+
+        </div>
+        <div className='flex justify-center  mt-[10px]'>
+          <Button variant="contained" sx={{ height: "50px", background: "#AC1313", marginTop: "20px" }}>View All Products</Button>
+        </div>
       </section>
 
+
+      {/* section6 */}
+      <section className='section6 w-[100%] h-[40vh] mt-[80px] flex items-center'>
+        <div className='ml-[30px]'>
+          <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
+          <h1 className='md:text-[30px] font-bold  animate__animated animate__fadeInTopRight'>Pottery Collection</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Suspendisse varius enim in eros elementum.</p>
+          <Button variant="contained" sx={{ height: "50px", background: "#AC1313", marginTop: "20px" }}>View All Products</Button>
+        </div>
+      </section>
+
+
+      {/* section7 */}
+      <section>
+
+        <div >
+          <div className='flex flex-col justify-center items-center m-[4%]'>
+            <img src='src/assets/IMAGE.svg' />
+            <p className='m-[20px] text-[red]'>Latest news</p>
+          </div>
+
+          <div className='flex items-center justify-center m-[3%]'>
+            <h1 className='md:text-[50px] mob:text-[30px]  font-bold animate__animated animate__slideInLeft'>Porcelain</h1>
+            <img src='src/assets/&.png' />
+            <h1 className='md:text-[50px] mob:text-[30px]  font-bold animate__animated animate__slideInLeft'>Pottery</h1>
+          </div>
+
+
+          <div className='flex justify-center m-[3%]'>
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{ marginRight: "5px" }} />
+            <Button variant="contained" sx={{ width: "150px", height: "55px", background: "black" }}>Contained</Button>
+          </div>
+
+
+          <div className='flex justify-center items-center  mb-[30px]'>
+            <Checkbox {...label} defaultChecked color="secondary" />
+            <p className='text-[#A1A1A1]'>Sign up for our newsletter</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {/* section8 */}
+      <hr />
+      <section className='bg-[#DBDBDB1A] p-[4%]'>
+
+        <div className='flex justify-center '>
+          <div>
+            <img src='src/assets/1.jpg' />
+            <p className='text-[#6C6C6C]'>I have always striven to fix beauty in wood, stone,</p>
+            <p className='text-[#6C6C6C]'>glass or pottery, that has been my creed.</p>
+          </div>
+        </div>
+
+
+        <div className='md:flex justify-around  mt-[50px]'>
+
+          <div>
+            <EmailIcon></EmailIcon>
+            <p className='mb-[20px]'>EMAIL</p>
+            <p className='text-[#6C6C6C]'>pompeopotery@gmail.com</p>
+          </div>
+
+
+          <div>
+            <AddLocationIcon></AddLocationIcon>
+            <p className='mb-[20px]'>FIND</p>
+            <p className='text-[#6C6C6C]'>Central Park, Manhattan</p>
+          </div>
+
+          <div>
+            <PhoneInTalkIcon></PhoneInTalkIcon>
+            <p className='mb-[20px]'>CALL</p>
+            <p className='text-[#6C6C6C]'>+1 292 345 678</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* footer */}
+
+      <footer></footer>
 
     </>
   )
