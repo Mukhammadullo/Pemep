@@ -17,7 +17,7 @@ import { useEffect } from 'react';
 
 function App() {
 
-// aos
+  // aos
   useEffect(() => {
     AOS.init();
   }, [])
@@ -81,7 +81,7 @@ function App() {
       <section className='mt-[40px]'>
 
         {/* title */}
-        <div  className='flex flex-col items-center justify-center '>
+        <div className='flex flex-col items-center justify-center '>
           <p className='text-[#D77474] font-bold   animate__animated animate__slideInLeft'>Pompeo Pottery</p>
           <div className='flex items-center'>
             <h1 className='md:text-[50px] mob:text-[30px]  font-bold animate__animated animate__slideInLeft'>Porcelain</h1>
@@ -91,13 +91,28 @@ function App() {
         </div>
 
         <div data-aos="zoom-in-down" className='flex flex-wrap justify-around '>
-          <img src='src/assets/Frame (2).png' className='m-[10px]'  />
+          <img src='src/assets/Frame (2).png' className='m-[10px]' />
           <img src='src/assets/Frame (3).png' className='m-[10px]' />
           <img src='src/assets/Frame (4).png' className='m-[10px]' />
         </div>
 
 
+        <div data-aos="zoom-out-down" className='md:flex justify-around mt-[40px]'>
+          {/* left */}
+          <div className='m-[10px]'>
+            <h1 className=' md:text-[40px] mob:text-[30px] font-bold'>Hand Grafted</h1>
+            <h1 className=' md:text-[40px] mob:text-[30px] font-bold'>Pottery since 1990</h1>
+            <p className='text-[#6C6C6C]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius <br /> enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor  <br />interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et  <br />justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
+          </div>
+          {/* right */}
+          <div className='m-[10px]'>
+            <h1 className='md:text-[40px] mob:text-[30px] font-bold'>Hand Grafted</h1>
+            <h1 className='md:text-[40px] mob:text-[30px] font-bold'>Pottery since 1990</h1>
+            <p className='text-[#6C6C6C]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius <br /> enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor  <br />interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et  <br />justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
 
+          </div>
+
+        </div>
 
 
       </section>
